@@ -1,0 +1,27 @@
+{
+  "name": "slim-emulator",
+  "version": "0.1.0",
+  "description": "Manage Android emulator profiles and measure their resource usage.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "slim-em": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx cli/src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test cli/src/**/*.test.ts"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

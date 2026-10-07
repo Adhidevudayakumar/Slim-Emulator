@@ -31,3 +31,8 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Node.js CLI build output
+node_modules/
+dist/
+coverage/
